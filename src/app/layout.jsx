@@ -7,6 +7,8 @@ import {
   MantineProvider,
   mantineHtmlProps,
 } from "@mantine/core";
+import { HeaderSimple } from "./components/Header/HeaderSimple";
+import { FooterSocial } from "./components/Footer/Footersocial";
 
 export const metadata = {
   title: "My Mantine app",
@@ -20,7 +22,11 @@ export default function RootLayout({ children }) {
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider>
+          <HeaderSimple />
+          {children}
+          <FooterSocial />
+        </MantineProvider>
       </body>
     </html>
   );

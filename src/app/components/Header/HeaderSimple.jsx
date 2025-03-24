@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Burger, Container, Group } from "@mantine/core";
+import { Burger, Container, Group, Anchor } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { MantineLogo } from "@mantinex/mantine-logo";
 import classes from "./HeaderSimple.module.css";
+import Link from "next/link";
 
 const links = [
   { link: "/Blog", label: "Blog" },
@@ -17,24 +18,26 @@ export function HeaderSimple() {
   const [active, setActive] = useState(links[0].link);
 
   const items = links.map((link) => (
-    <a
+    <Link
       key={link.label}
       href={link.link}
       className={classes.link}
       data-active={active === link.link || undefined}
       onClick={(event) => {
-        event.preventDefault();
         setActive(link.link);
       }}
     >
       {link.label}
-    </a>
+    </Link>
   ));
 
   return (
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
-        <MantineLogo size={28} />
+        <Link href="/" style={{ textDecoration: "none", color: "inherit" }}>
+          <MantineLogo size={28} />
+        </Link>
+
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>
