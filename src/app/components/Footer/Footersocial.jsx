@@ -6,7 +6,6 @@ import {
 import { ActionIcon, Container, Group } from "@mantine/core";
 import { MantineLogo } from "@mantinex/mantine-logo";
 import classes from "./FooterSocial.module.css";
-import Link from "next/link";
 
 export function FooterSocial() {
   return (
