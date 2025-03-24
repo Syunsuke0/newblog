@@ -8,7 +8,7 @@ import {
   mantineHtmlProps,
 } from "@mantine/core";
 import { HeaderSimple } from "./components/Header/HeaderSimple";
-import { FooterSocial } from "./components/Footer/Footersocial";
+import { FooterSocial } from "./components/Footer/FootersSocial";
 
 export const metadata = {
   title: "My Mantine app",
