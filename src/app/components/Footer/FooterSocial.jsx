@@ -18,13 +18,37 @@ export function FooterSocial() {
           justify="flex-end"
           wrap="nowrap"
         >
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandTwitter size={18} stroke={1.5} />
+          <ActionIcon
+            href="https://x.com/syun_Bass_"
+            component="a"
+            size="lg"
+            color="gray"
+            variant="subtle"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconBrandTwitter component="a" size={18} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          {/* <ActionIcon
+            component="a"
+            href=""
+            size="lg"
+            color="gray"
+            variant="subtle"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <IconBrandYoutube size={18} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          </ActionIcon> */}
+          <ActionIcon
+            href="https://www.instagram.com/say__vibes/"
+            component="a"
+            size="lg"
+            color="gray"
+            variant="subtle"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <IconBrandInstagram size={18} stroke={1.5} />
           </ActionIcon>
         </Group>
