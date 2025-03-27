@@ -35,8 +35,8 @@ const mockdata = [
   },
 ];
 
-const ArticlesCardsGrid = () => {
-  const cards = mockdata.map((article) => (
+const ArticlesCardsGrid = ({ posts }) => {
+  const cards = posts.map((article) => (
     <Card
       key={article.title}
       p="md"
@@ -46,10 +46,10 @@ const ArticlesCardsGrid = () => {
       className={classes.card}
     >
       <AspectRatio ratio={1920 / 1080}>
-        <Image src={article.image} />
+        <Image src={article.image.url} />
       </AspectRatio>
       <Text c="dimmed" size="xs" tt="uppercase" fw={700} mt="md">
-        {article.date}
+        {article.createdAt}
       </Text>
       <Text className={classes.title} mt={5}>
         {article.title}
