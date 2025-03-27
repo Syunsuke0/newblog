@@ -20,7 +20,7 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang="en" {...mantineHtmlProps}>
+    <html lang="ja" {...mantineHtmlProps}>
       <head>
         <ColorSchemeScript />
       </head>
