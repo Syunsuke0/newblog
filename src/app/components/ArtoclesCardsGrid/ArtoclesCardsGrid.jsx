@@ -7,6 +7,7 @@ import {
   Text,
 } from "@mantine/core";
 import classes from "./ArticlesCardsGrid.module.css";
+import dayjs from "dayjs";
 
 const mockdata = [
   {
@@ -36,6 +37,7 @@ const mockdata = [
 ];
 
 const ArticlesCardsGrid = ({ posts }) => {
+  const formattedDate = dayjs(posts.publishedAt).format("YYYY.MM.DD");
   const cards = posts.map((article) => (
     <Card
       key={article.title}
@@ -49,7 +51,7 @@ const ArticlesCardsGrid = ({ posts }) => {
         <Image src={article.image.url} />
       </AspectRatio>
       <Text c="dimmed" size="xs" tt="uppercase" fw={700} mt="md">
-        {article.createdAt}
+        {formattedDate}
       </Text>
       <Text className={classes.title} mt={5}>
         {article.title}
