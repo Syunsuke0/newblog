@@ -13,7 +13,7 @@ const links = [
   { link: "/Profile", label: "Profile" },
 ];
 
-export function HeaderSimple() {
+const HeaderSimple = () => {
   const [opened, { toggle }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
 
@@ -46,4 +46,6 @@ export function HeaderSimple() {
       </Container>
     </header>
   );
-}
+};
+
+export default HeaderSimple;

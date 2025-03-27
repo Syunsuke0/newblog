@@ -1,3 +1,5 @@
-export default function Home() {
-  return <div className="text-3xl font-bold underline">ボームページ</div>;
-}
+const Home = () => {
+  return <div className="text-3xl font-bold underline">ホームページ</div>;
+};
+
+export default Home;

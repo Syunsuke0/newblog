@@ -1,4 +1,4 @@
-import { ArticlesCardsGrid } from "../components/ArtoclesCardsGrid/ArtoclesCardsGrid";
+import ArticlesCardsGrid from "../components/ArtoclesCardsGrid/ArtoclesCardsGrid";
 
 const BlogPage = () => {
   return <ArticlesCardsGrid />;

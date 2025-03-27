@@ -7,7 +7,7 @@ import { ActionIcon, Container, Group } from "@mantine/core";
 import { MantineLogo } from "@mantinex/mantine-logo";
 import classes from "./FooterSocial.module.css";
 
-export function FooterSocial() {
+const FooterSocial = () => {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
@@ -55,4 +55,6 @@ export function FooterSocial() {
       </Container>
     </div>
   );
-}
+};
+
+export default FooterSocial;

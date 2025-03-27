@@ -8,15 +8,17 @@ import {
   MantineProvider,
   mantineHtmlProps,
 } from "@mantine/core";
-import { HeaderSimple } from "./components/Header/HeaderSimple";
-import { FooterSocial } from "./components/Footer/FooterSocial";
+import HeaderSimple from "./components/Header/HeaderSimple";
+import FooterSocial from "./components/Footer/FooterSocial";
+// import { HeaderSimple } from "./components/Header/HeaderSimple";
+// import { FooterSocial } from "./components/Footer/FooterSocial";
 
 export const metadata = {
   title: "My Mantine app",
   description: "I have followed setup instructions carefully",
 };
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
   return (
     <html lang="en" {...mantineHtmlProps}>
       <head>
@@ -31,4 +33,6 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

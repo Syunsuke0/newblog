@@ -35,7 +35,7 @@ const mockdata = [
   },
 ];
 
-export function ArticlesCardsGrid() {
+const ArticlesCardsGrid = () => {
   const cards = mockdata.map((article) => (
     <Card
       key={article.title}
@@ -62,4 +62,6 @@ export function ArticlesCardsGrid() {
       <SimpleGrid cols={{ base: 1, sm: 2 }}>{cards}</SimpleGrid>
     </Container>
   );
-}
+};
+
+export default ArticlesCardsGrid;
