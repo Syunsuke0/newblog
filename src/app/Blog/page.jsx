@@ -14,7 +14,14 @@ const getBlogPosts = async () => {
 
 const BlogPage = async () => {
   const posts = await getBlogPosts();
-  return <ArticlesCardsGrid posts={posts} />;
+  return (
+    <div>
+      <h1 className="text-6xl font-extrabold font-mono italic flex justify-center">
+        Blogs
+      </h1>
+      <ArticlesCardsGrid posts={posts} />
+    </div>
+  );
 };
 
 export default BlogPage;

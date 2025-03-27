@@ -8,6 +8,7 @@ import classes from "./HeaderSimple.module.css";
 import Link from "next/link";
 
 const links = [
+  { link: "/", label: "Home" },
   { link: "/Blog", label: "Blog" },
   { link: "/Movies", label: "Movies" },
   { link: "/Profile", label: "Profile" },

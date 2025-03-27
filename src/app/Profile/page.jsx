@@ -1,6 +1,11 @@
+import Image from "next/image";
+
 const ProfilePage = () => {
   return (
     <div>
+      <h1 className="text-6xl font-extrabold font-mono italic flex justify-center">
+        Profile
+      </h1>
 
       <Image
         src="/user.png"
