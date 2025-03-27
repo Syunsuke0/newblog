@@ -1,5 +1,9 @@
 const ProfilePage = () => {
-  return <div>プロフィールページ</div>;
+  return (
+    <div>
+      <h1 className="text-4xl">プロフィールページ</h1>
+    </div>
+  );
 };
 
 export default ProfilePage;
