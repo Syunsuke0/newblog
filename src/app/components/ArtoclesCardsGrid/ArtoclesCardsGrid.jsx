@@ -44,7 +44,7 @@ const ArticlesCardsGrid = ({ posts }) => {
       p="md"
       radius="md"
       component="a"
-      href="#"
+      href={`Blog/${article.id}`}
       className={classes.card}
     >
       <AspectRatio ratio={1920 / 1080}>
