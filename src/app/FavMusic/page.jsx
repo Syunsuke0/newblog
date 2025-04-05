@@ -38,6 +38,9 @@ const FavMusic = () => {
 
   return (
     <div>
+      <h1 className="text-6xl font-extrabold font-mono italic flex justify-center">
+        FavMusic
+      </h1>
       <Select
         data={months}
         className="w-82"
