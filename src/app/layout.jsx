@@ -10,8 +10,6 @@ import {
 } from "@mantine/core";
 import HeaderSimple from "./components/Header/HeaderSimple";
 import FooterSocial from "./components/Footer/FooterSocial";
-// import { HeaderSimple } from "./components/Header/HeaderSimple";
-// import { FooterSocial } from "./components/Footer/FooterSocial";
 
 export const metadata = {
   title: "My Mantine app",
