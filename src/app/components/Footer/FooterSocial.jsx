@@ -1,17 +1,25 @@
 import {
   IconBrandInstagram,
   IconBrandTwitter,
-  IconBrandYoutube,
+  // IconBrandYoutube,
 } from "@tabler/icons-react";
 import { ActionIcon, Container, Group } from "@mantine/core";
-import { MantineLogo } from "@mantinex/mantine-logo";
 import classes from "./FooterSocial.module.css";
+// import Logo from "../../../assets/syunblog.svg";
+import Logo2 from "../../../assets/syunblog2.png";
+import Image from "next/image";
 
 const FooterSocial = () => {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <MantineLogo size={28} />
+        <Image
+          className="rounded-full "
+          src={Logo2}
+          width={46}
+          height={46}
+          alt="FooterImage"
+        />
         <Group
           gap={0}
           className={classes.links}
@@ -40,7 +48,7 @@ const FooterSocial = () => {
           >
             <IconBrandYoutube size={18} stroke={1.5} />
           </ActionIcon> */}
-          <ActionIcon
+          {/* <ActionIcon
             href="https://www.instagram.com/say__vibes/"
             component="a"
             size="lg"
@@ -50,7 +58,7 @@ const FooterSocial = () => {
             rel="noopener noreferrer"
           >
             <IconBrandInstagram size={18} stroke={1.5} />
-          </ActionIcon>
+          </ActionIcon> */}
         </Group>
       </Container>
     </div>

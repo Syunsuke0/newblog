@@ -15,7 +15,7 @@ const ProfilePage = () => {
         className="rounded-full m-auto"
       />
 
-      <h2 className="flex justify-center underline">sh-ke - プロフィール</h2>
+      <h2 className="flex justify-center underline">Syun - プロフィール</h2>
       <p className="px-60">
         ガジェット、音楽、アニメが好き。
         <br />

@@ -2,15 +2,19 @@
 
 import { Burger, Container, Group, Anchor } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { MantineLogo } from "@mantinex/mantine-logo";
 import classes from "./HeaderSimple.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+// import Logo from "../../../assets/syunblog.svg";
+import Logo2 from "../../../assets/syunblog2.png";
+
+import Image from "next/image";
 
 const links = [
   { link: "/", label: "Home" },
   { link: "/Blog", label: "Blog" },
-  { link: "/Movies", label: "Movies" },
+  // { link: "/Movies", label: "Movies" },
+  { link: "/FavMusic", label: "FavMusic" },
   { link: "/Profile", label: "Profile" },
 ];
 
@@ -33,7 +37,13 @@ const HeaderSimple = () => {
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <Link href="/" style={{ textDecoration: "none", color: "inherit" }}>
-          <MantineLogo size={28} />
+          <Image
+            className=" rounded-full"
+            src={Logo2}
+            width={46}
+            height={46}
+            alt="HeaderImage"
+          />
         </Link>
 
         <Group gap={5} visibleFrom="xs">
