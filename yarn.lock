@@ -279,10 +279,15 @@
   resolved "https://registry.yarnpkg.com/@img/sharp-win32-x64/-/sharp-win32-x64-0.33.5.tgz#56f00962ff0c4e0eb93d34a047d29fa995e3e342"
   integrity sha512-MpY/o8/8kj+EcnxwvrP4aTJSWw/aZ7JIGR4aBeZkZw5B7/Jn+tY9/VNwtcoGmdT7GfggGIU4kygOMSbYnOrAbg==
 
-"@mantine/core@^7.17.2":
-  version "7.17.2"
-  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.17.2.tgz#027fe3c8d43abefc318b7b9229a8e5146635c7b8"
-  integrity sha512-R6MYhitJ0JEgrhadd31Nw9FhRaQwDHjXUs5YIlitKH/fTOz9gKSxKjzmNng3bEBQCcbEDOkZj3FRcBgTUh/F0Q==
+"@mantine/carousel@^7.17.3":
+  version "7.17.3"
+  resolved "https://registry.yarnpkg.com/@mantine/carousel/-/carousel-7.17.3.tgz#c548bb3b62c4e498026c8c0d01b7c579b3cc5411"
+  integrity sha512-WAt1DvV5WFaLz7BWCqIWiWbmJRe4LXP4SjKATb1lETAnmZqxMeE6VpSe80XGt65kKFaEeLhgMwSnEJX61wFYpg==
+
+"@mantine/core@^7.17.3":
+  version "7.17.3"
+  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.17.3.tgz#78ee30bb4493c6117d6d381fbfc374d773eedf8b"
+  integrity sha512-N/AfV5eMnfEMx9WzI7AU5pNFBEzAfT/KtE2XDKS+0ht6RifUmolIxyIvoGMYz2yUEsCBMJZqmBq33Rabf5W7Ug==
   dependencies:
     "@floating-ui/react" "^0.26.28"
     clsx "^2.1.1"
@@ -291,10 +296,10 @@
     react-textarea-autosize "8.5.6"
     type-fest "^4.27.0"
 
-"@mantine/hooks@^7.17.2":
-  version "7.17.2"
-  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.17.2.tgz#bfd10e65cb5a83326ecfdd339e56558ea6045c44"
-  integrity sha512-tbErVcGZu0E4dSmE6N0k6Tv1y9R3SQmmQgwqorcc+guEgKMdamc36lucZGlJnSGUmGj+WLUgELkEQ0asdfYBDA==
+"@mantine/hooks@^7.17.3":
+  version "7.17.3"
+  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.17.3.tgz#fe8c32edaeffb43f0fa5d984f6373fcef47f1ff8"
+  integrity sha512-6o65Rbfl8jd1C1nF9icvungqL0qZViEOmrZgkyKXxBYkC3x91fz4zftwQgNjt1tZHWDNO6Bo4GpRjJyAdwl48g==
 
 "@mantinex/mantine-logo@^1.1.0":
   version "1.1.0"
@@ -1106,6 +1111,24 @@ electron-to-chromium@^1.5.73:
   version "1.5.124"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.124.tgz#34b1d6baf8f21d9dbcbae6e67fa276e54554ce81"
   integrity sha512-riELkpDUqBi00gqreV3RIGoowxGrfueEKBd6zPdOk/I8lvuFpBGNkYoHof3zUHbiTBsIU8oxdIIL/WNrAG1/7A==
+
+embla-carousel-react@^8.5.2:
+  version "8.5.2"
+  resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-8.5.2.tgz#f79f6c36690596fe2aceec994372ab84bfbfd9cc"
+  integrity sha512-Tmx+uY3MqseIGdwp0ScyUuxpBgx5jX1f7od4Cm5mDwg/dptEiTKf9xp6tw0lZN2VA9JbnVMl/aikmbc53c6QFA==
+  dependencies:
+    embla-carousel "8.5.2"
+    embla-carousel-reactive-utils "8.5.2"
+
+embla-carousel-reactive-utils@8.5.2:
+  version "8.5.2"
+  resolved "https://registry.yarnpkg.com/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.5.2.tgz#914bf99c3d91e0809282fc1d14df3d1453f222c1"
+  integrity sha512-QC8/hYSK/pEmqEdU1IO5O+XNc/Ptmmq7uCB44vKplgLKhB/l0+yvYx0+Cv0sF6Ena8Srld5vUErZkT+yTahtDg==
+
+embla-carousel@8.5.2:
+  version "8.5.2"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-8.5.2.tgz#95eb936d14a1b9a67b9207a0fde1f25259a5d692"
+  integrity sha512-xQ9oVLrun/eCG/7ru3R+I5bJ7shsD8fFwLEY7yPe27/+fDHCNj0OT5EoG5ZbFyOxOcG6yTwW8oTz/dWyFnyGpg==
 
 emoji-regex@^9.2.2:
   version "9.2.2"

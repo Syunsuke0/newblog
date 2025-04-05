@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mantine/core": "^7.17.2",
-    "@mantine/hooks": "^7.17.2",
+    "@mantine/carousel": "^7.17.3",
+    "@mantine/core": "^7.17.3",
+    "@mantine/hooks": "^7.17.3",
     "@mantinex/mantine-logo": "^1.1.0",
     "@tabler/icons-react": "^3.31.0",
     "dayjs": "^1.11.13",
+    "embla-carousel-react": "^8.5.2",
     "microcms-js-sdk": "^3.2.0",
     "next": "15.2.3",
     "react": "^19.0.0",
