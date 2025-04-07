@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Tabs, Select } from "@mantine/core";
 import Image from "next/image";
+import SpotifyPlayer from "../components/SpotifyPlayer";
 
 const FavMusic = () => {
   const [month, setMonth] = useState("march");
@@ -52,20 +53,18 @@ const FavMusic = () => {
       <Tabs defaultValue="Songs">
         <Tabs.List>
           <Tabs.Tab value="Songs">Songs</Tabs.Tab>
-          <Tabs.Tab value="Artists">Artists</Tabs.Tab>
-          <Tabs.Tab value="Albums">Albums</Tabs.Tab>
+          <Tabs.Tab value="Artists" disabled>
+            Artists
+          </Tabs.Tab>
+          <Tabs.Tab value="Albums" disabled>
+            Albums
+          </Tabs.Tab>
         </Tabs.List>
 
         <Tabs.Panel value="Songs">
-          <Image
-            src={data[month].Songs}
-            width={300}
-            height={300}
-            alt="Top Song"
-            className="rounded-4xl mt-4"
-          />
+          <SpotifyPlayer />
         </Tabs.Panel>
-        <Tabs.Panel value="Artists">
+        {/* <Tabs.Panel value="Artists">
           <Image
             src={data[month].Artists}
             width={300}
@@ -81,8 +80,8 @@ const FavMusic = () => {
             height={300}
             alt="Top Album"
             className="rounded-4xl mt-4"
-          />
-        </Tabs.Panel>
+          /> */}
+        {/* </Tabs.Panel> */}
       </Tabs>
     </div>
   );
