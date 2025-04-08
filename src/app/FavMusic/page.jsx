@@ -16,25 +16,14 @@ const FavMusic = () => {
   ];
   const data = {
     january: {
-      Songs: "/January/topsong.jpg",
-      Artists: "/January/topartist.jpg",
-      Albums: "/January/topalbum.jpg",
+      TopSongs: "79cRtF4KUEkqhjG2ZtTRWI",
     },
     february: {
-      Songs: "/February/topsong.jpg",
-      Artists: "/February/topartist.jpg",
-      Albums: "/February/topalbum.jpg",
+      TopSongs: "2U2r2wpoxGCU8LCipJMfZX",
     },
     march: {
-      Songs: "/March/topsong.jpg",
-      Artists: "/March/topartist.jpg",
-      Albums: "/March/topalbum.jpg",
+      TopSongs: "0eIuZdFPrFnElgjOojqSq8",
     },
-    // april: {
-    //   Songs: "/april/song.jpg",
-    //   Artists: "/april/artist.jpg",
-    //   Albums: "/april/album.jpg",
-    // },
   };
 
   return (
@@ -62,7 +51,7 @@ const FavMusic = () => {
         </Tabs.List>
 
         <Tabs.Panel value="Songs">
-          <SpotifyPlayer />
+          <SpotifyPlayer PlaylistId={data[month].TopSongs} />
         </Tabs.Panel>
         {/* <Tabs.Panel value="Artists">
           <Image

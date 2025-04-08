@@ -1,14 +1,16 @@
-const SpotifyPlayer = () => {
+const SpotifyPlayer = ({ PlaylistId }) => {
   return (
     <div className="rounded-2xl overflow-hidden">
       <iframe
-        className="w-full"
-        height="352"
-        src="https://open.spotify.com/playlist/0eIuZdFPrFnElgjOojqSq8?si=5fc4de2e78d04dba"
+        title="Spotify Embed: Recommendation Playlist "
+        src={`https://open.spotify.com/embed/playlist/${PlaylistId}?theme=0`}
+        width="60%"
+        height="100%"
+        style={{ minHeight: "360px" }}
         frameBorder="0"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
-      ></iframe>
+      />
     </div>
   );
 };
