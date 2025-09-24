@@ -16,7 +16,6 @@ const getBlogPost = async (id) => {
 const BlogPostPage = async ({ params }) => {
   const { id } = await params; // IDを取得
   const post = await getBlogPost(id);
-  console.log(post);
 
   // dayjsを使ってpublishedAtをYY.MM.DD形式に変換
   const formattedDate = dayjs(post.publishedAt).format("YY.MM.DD");
