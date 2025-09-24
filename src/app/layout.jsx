@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-extrabold font-mono italic`}
       >
         <Header />
-        <main className="min-h-174">{children}</main>
+        <main className="min-h-188">{children}</main>
         <Footer />
       </body>
     </html>
