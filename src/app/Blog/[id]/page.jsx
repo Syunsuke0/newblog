@@ -24,9 +24,9 @@ const BlogPostPage = async ({ params }) => {
     <main className={styles.main}>
       <h1 className={styles.title}>{post.title}</h1> {/* タイトルを表示 */}
       <div className={styles.date}>{formattedDate}</div> {/* 日付を表示 */}
-      <div className={styles.category}>
+      {/* <div className={styles.category}>
         カテゴリー：{post.category && post.category.name}
-      </div>{" "}
+      </div>{" "} */}
       {/* カテゴリーを表示 */}
       <div
         className={styles.post}
