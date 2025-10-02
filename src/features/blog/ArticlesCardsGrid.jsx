@@ -22,7 +22,7 @@ const ArticlesCardsGrid = ({ posts }) => {
         className={classes.card}
       >
         <AspectRatio ratio={1920 / 1080}>
-          <Image src={article.image.url} radius="md" />
+          <Image src={article.image?.url ?? "/Noimage.png"} radius="md" />
         </AspectRatio>
         <Text className={classes.date}>{formattedDate}</Text>
         <Text className={classes.title}>{article.title}</Text>

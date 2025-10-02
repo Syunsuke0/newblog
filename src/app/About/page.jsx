@@ -13,7 +13,8 @@ const About = () => {
       <p>
         ・React <br />
         ・Next.js <br /> ・Tailwind CSS <br />
-        ・microCMS <br />
+        ・mantine UI <br />
+        ・microCMS
       </p>
 
       {/* <h2 className="text-2xl mt-6">最後に</h2>
