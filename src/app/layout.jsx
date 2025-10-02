@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { MantineProvider } from "@mantine/core";
+import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 
 const geistSans = Geist({
@@ -23,10 +23,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ja">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-extrabold font-mono italic`}
-      >
-        <MantineProvider>
+      <body className={` antialiased font-extrabold font-mono italic`}>
+        <MantineProvider forceColorScheme="light">
           <Header />
           <main className="min-h-188">{children}</main>
           <Footer />
